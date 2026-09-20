@@ -1,0 +1,4 @@
+# このフォルダ内は、常に管理対象外。ただしフォルダの存在は残す。
+# https://qiita.com/ndxbn/items/f124d2b183b60cb074e2
+*
+!.gitignore

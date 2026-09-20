@@ -1,0 +1,14 @@
+# Other
+**/.temp
+
+# Gradle
+**/.gradle
+**/build
+**/bin
+
+# Minecraft
+**/*.launch
+
+
+# IDE settings
+**/.settings/

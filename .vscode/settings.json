@@ -1,0 +1,31 @@
+{
+
+    "files.exclude": {
+
+        // 基本
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+
+        // Gradle
+        "**/.gradle": true,
+        "**/gradle.properties": false,
+        "gradle": true,
+        "gradlew": true,
+        "gradlew.bat": true,
+        "**/build": true,
+        "**/.settings": false,
+        "**/.classpath": false,
+        "**/.project": false,
+        "**/bin": true,
+
+        // Minecraft
+        "**/run": true,
+        "**/*_client.launch": true,
+        "**/*_server.launch": true,
+    },
+    "java.compile.nullAnalysis.mode": "automatic"
+}

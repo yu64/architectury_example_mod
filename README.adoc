@@ -1,0 +1,22 @@
+# Architectury Example Mod
+
+Architecturyを用いたサンプルMinecraft Mod
+
+## 導入
+
+. このリポジトリをクローンする
+. `gradlew neoforge:build` を実行し、ビルドする
+. Java環境を含むVSCodeで開く
+. VSCodeでF5を押し、実行する
+
+
+
+## 参考
+
+Architectury Api:: https://www.curseforge.com/minecraft/mc-mods/architectury-api
+Animal Feeding Trough:: https://www.curseforge.com/minecraft/mc-mods/animal-feeding-trough
+
+
+
+
+

@@ -1,0 +1,73 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "gradle",
+			"label": "DebugClient_NeoForge",
+			"id": "neoforge:runClient",
+			"description": "Run Minecraft (debug mode)",
+			"script": "neoforge:runClient",
+			"group": "loom",
+			"project": "neoforge",
+			"buildFile": "${workspaceFolder}\\neoforge\\build.gradle",
+			"rootProject": "architectury_example_mod",
+			"projectFolder": "${workspaceFolder}",
+			"workspaceFolder": "${workspaceFolder}",
+			"args": "--debug-jvm",
+			"javaDebug": false,
+			"problemMatcher": {
+				"base": "$gradle",
+
+				"pattern": [
+					{
+						"regexp": "\\b\\B",
+						"file": 1,
+						"location": 2,
+						"message": 3
+					}
+				],
+				
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "^.*Preparing to execute Maven in debug mode.*",
+                    "endsPattern": "^.*Listening for transport dt_socket at address.*"
+                }
+			},
+            "isBackground": true
+		},
+		{
+			"type": "gradle",
+			"label": "DebugServer_NeoForge",
+			"id": "neoforge:runServer",
+			"description": "Run Minecraft (debug mode)",
+			"script": "neoforge:runServer",
+			"group": "loom",
+			"project": "neoforge",
+			"buildFile": "${workspaceFolder}\\neoforge\\build.gradle",
+			"rootProject": "architectury_example_mod",
+			"projectFolder": "${workspaceFolder}",
+			"workspaceFolder": "${workspaceFolder}",
+			"args": "--debug-jvm",
+			"javaDebug": false,
+			"problemMatcher": {
+				"base": "$gradle",
+
+				"pattern": [
+					{
+						"regexp": "\\b\\B",
+						"file": 1,
+						"location": 2,
+						"message": 3
+					}
+				],
+				
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "^.*Preparing to execute Maven in debug mode.*",
+                    "endsPattern": "^.*Listening for transport dt_socket at address.*"
+                }
+			},
+            "isBackground": true
+		}
+	]
+}
